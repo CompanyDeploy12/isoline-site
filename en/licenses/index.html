@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Open-source licences — Isoline</title>
+<meta name="description" content="Open-source components used in the Isoline apps for iPhone, Mac and Android, with versions, licences, copyright notices and source availability for Xray-core (MPL-2.0).">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4E6CB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E0F0C" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://isoline.conciergegroup.pro/en/licenses/">
+<link rel="alternate" hreflang="hr" href="https://isoline.conciergegroup.pro/licenses/">
+<link rel="alternate" hreflang="en" href="https://isoline.conciergegroup.pro/en/licenses/">
+<link rel="alternate" hreflang="ru" href="https://isoline.conciergegroup.pro/ru/licenses/">
+<link rel="alternate" hreflang="x-default" href="https://isoline.conciergegroup.pro/en/licenses/">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/old-standard-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/onest-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script src="../../assets/js/site.js" defer></script>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Isoline">
+<meta property="og:title" content="Open-source licences — Isoline">
+<meta property="og:description" content="Open-source components used in the Isoline apps for iPhone, Mac and Android, with versions, licences, copyright notices and source availability for Xray-core (MPL-2.0).">
+<meta property="og:url" content="https://isoline.conciergegroup.pro/en/licenses/">
+<meta property="og:image" content="https://isoline.conciergegroup.pro/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Isoline">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="hr_HR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../../en/"><svg viewBox="0 0 1024 1024" aria-hidden="true" focusable="false"><rect width="1024" height="1024" rx="228" fill="#F4E6CB"/><g fill="none" stroke="#B0301E" stroke-width="44"><path d="M180 690 C 170 520, 330 330, 560 300 C 760 275, 880 400, 850 560 C 820 720, 640 800, 470 790 C 300 780, 188 760, 180 690 Z"/><path d="M300 640 C 300 520, 420 400, 580 385 C 720 372, 790 450, 770 560 C 750 660, 640 710, 520 705 C 400 700, 300 700, 300 640 Z"/><path d="M430 590 C 435 520, 510 465, 600 462 C 680 460, 705 510, 690 565 C 675 620, 610 640, 545 636 C 480 632, 428 630, 430 590 Z"/></g><path d="M582 470 L 640 570 L 524 570 Z" fill="#5E1614"/></svg><span>Isoline</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="../../en/#features">Features</a>
+      <a href="../../en/#preview">Preview</a>
+      <a href="../../en/#faq">FAQ</a>
+      <a href="../../en/support/">Support</a>
+      <a href="../../en/privacy/">Privacy</a>
+    </nav>
+    <nav class="lang" aria-label="Language"><a href="../../licenses/" hreflang="hr" lang="hr" title="Hrvatski">hr</a><a href="../../en/licenses/" hreflang="en" lang="en" title="English" aria-current="true">en</a><a href="../../ru/licenses/" hreflang="ru" lang="ru" title="Русский">ru</a></nav>
+  </div>
+</header>
+<main id="main">
+  <div class="doc-hero">
+    <div class="wrap">
+      <p class="label">Legal · Open source</p>
+      <h1>Open-source licences</h1>
+      <p class="lead">Isoline is built on open-source software. We thank its authors. This page lists the components in the apps, their licences and where to get the source code. The same list is in the app under Settings › Licenses.</p>
+      <ul class="doc-meta"><li class="tag">Updated: <time datetime="2026-11-23">&nbsp;23 November 2026</time></li></ul>
+    </div>
+  </div>
+  <div class="wrap doc-layout">
+    <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#core">1. Network core (all platforms)</a></li><li><a href="#mpl">2. Xray-core and other MPL-2.0 components — source code</a></li><li><a href="#tunnel">3. Packet tunnel engine (all platforms)</a></li><li><a href="#apple">4. iPhone and Mac</a></li><li><a href="#android">5. Android</a></li><li><a href="#fonts">6. Fonts (apps and this website)</a></li><li><a href="#texts">7. Licence texts</a></li><li><a href="#trademarks">8. Trademarks</a></li></ol></nav>
+    <article class="doc reg">
+<h2 id="core">1. Network core (all platforms)</h2>
+<p>The network core is written in Go and linked into the iPhone, Mac and Android apps. It includes these modules (versions from <code>core/go.mod</code>):</p>
+<div class="table-wrap"><table class="lic">
+  <thead><tr><th>Component</th><th>Version</th><th>Licence</th><th>Copyright</th></tr></thead>
+  <tbody>
+<tr><td>github.com/amnezia-vpn/amneziawg-go/v3</td><td>v3.1.20261116</td><td>MIT</td><td>Copyright (C) 2017-2025 WireGuard LLC. All Rights Reserved.</td></tr>
+<tr><td>github.com/apernet/quic-go</td><td>v0.61.1…184d081eef3e</td><td>MIT</td><td>Copyright (c) 2016 the quic-go authors &amp; Google, Inc.</td></tr>
+<tr><td>github.com/ghodss/yaml</td><td>v1.0.1…d8423dcdf344</td><td>MIT</td><td>Copyright (c) 2014 Sam Ghods; Copyright (c) 2012 The Go Authors. All rights reserved.</td></tr>
+<tr><td>github.com/google/gopacket</td><td>v1.1.19</td><td>BSD-3-Clause</td><td>Copyright (c) 2012 Google, Inc. All rights reserved.; Copyright (c) 2009-2011 Andreas Krennmair. All rights reserved.</td></tr>
+<tr><td>github.com/google/uuid</td><td>v1.6.0</td><td>BSD-3-Clause</td><td>Copyright (c) 2009,2014 Google Inc. All rights reserved.</td></tr>
+<tr><td>github.com/gorilla/websocket</td><td>v1.5.3</td><td>BSD-2-Clause</td><td>Copyright (c) 2013 The Gorilla WebSocket Authors. All rights reserved.</td></tr>
+<tr><td>github.com/huin/goupnp</td><td>v1.2.0</td><td>BSD-2-Clause</td><td>Copyright (c) 2013, John Beisley &lt;johnbeisleyuk@gmail.com&gt;</td></tr>
+<tr><td>github.com/jackpal/go-nat-pmp</td><td>v1.0.2</td><td>Apache-2.0</td><td>Copyright 2013 John Howard Palevich</td></tr>
+<tr><td>github.com/juju/ratelimit</td><td>v1.0.2</td><td>LGPL-3.0 with static-linking exception</td><td>Copyright (C) 2015 Canonical Ltd.</td></tr>
+<tr><td>github.com/klauspost/compress</td><td>v1.20.1</td><td>Apache-2.0</td><td>Copyright (c) 2012 The Go Authors. All rights reserved.; Copyright (c) 2019 Klaus Post. All rights reserved.</td></tr>
+<tr><td>github.com/klauspost/cpuid/v2</td><td>v2.4.2</td><td>MIT</td><td>Copyright (c) 2015 Klaus Post</td></tr>
+<tr><td>github.com/koron/go-ssdp</td><td>v0.0.4</td><td>MIT</td><td>Copyright (c) 2016 MURAOKA Taro &lt;koron.kaoriya@gmail.com&gt;</td></tr>
+<tr><td>github.com/libp2p/go-nat</td><td>v1.0.1…01afc089f138</td><td>Apache-2.0</td><td>Copyright its authors</td></tr>
+<tr><td>github.com/libp2p/go-netroute</td><td>v0.2.1</td><td>BSD-3-Clause</td><td>Copyright (c) 2020 Will Scott. All rights reserved.; Copyright (c) 2012 Google, Inc. All rights reserved.</td></tr>
+<tr><td>github.com/miekg/dns</td><td>v1.1.73</td><td>BSD-3-Clause</td><td>Copyright (c) 2009, The Go Authors. Extensions copyright (c) 2011, Miek Gieben.</td></tr>
+<tr><td>github.com/molecule-man/go-brrr</td><td>v1.2.0</td><td>MIT</td><td>Copyright (c) 2026 Andrii Berezhynskyi</td></tr>
+<tr><td>github.com/pelletier/go-toml</td><td>v1.9.5</td><td>Apache-2.0</td><td>Copyright (c) 2013 - 2021 Thomas Pelletier, Eric Anderton</td></tr>
+<tr><td>github.com/pion/dtls/v3</td><td>v3.1.5</td><td>MIT</td><td>Copyright (c) 2026 The Pion community &lt;https://pion.ly&gt;</td></tr>
+<tr><td>github.com/pion/logging</td><td>v0.2.4</td><td>MIT</td><td>Copyright (c) 2023 The Pion community &lt;https://pion.ly&gt;</td></tr>
+<tr><td>github.com/pion/stun/v3</td><td>v3.1.7</td><td>MIT</td><td>Copyright (c) 2026 The Pion community &lt;https://pion.ly&gt;</td></tr>
+<tr><td>github.com/pion/transport/v4</td><td>v4.1.0</td><td>MIT</td><td>Copyright (c) 2026 The Pion community &lt;https://pion.ly&gt;</td></tr>
+<tr><td>github.com/pires/go-proxyproto</td><td>v0.16.0</td><td>Apache-2.0</td><td>Copyright 2016 Paulo Pires</td></tr>
+<tr><td>github.com/quic-go/qpack</td><td>v0.6.0</td><td>MIT</td><td>Copyright 2019 Marten Seemann</td></tr>
+<tr><td>github.com/refraction-networking/utls</td><td>v1.8.3…a13c59ffe98b</td><td>BSD-3-Clause</td><td>Copyright (c) 2009 The Go Authors. All rights reserved.</td></tr>
+<tr><td>github.com/robfig/cron/v3</td><td>v3.0.1</td><td>MIT</td><td>Copyright (C) 2012 Rob Figueiredo</td></tr>
+<tr><td>github.com/wlynxg/anet</td><td>v0.0.5</td><td>BSD-3-Clause</td><td>Copyright (c) 2023, wlynxg</td></tr>
+<tr><td>github.com/xtls/reality</td><td>v0.0.0…4bb46b2afd8b</td><td>MPL-2.0</td><td>Copyright (c) 2023 RPRX. All rights reserved.</td></tr>
+<tr><td>github.com/xtls/xray-core</td><td>v1.260327.1…676eaf66f8f0</td><td>MPL-2.0</td><td>Copyright the Project X (XTLS) authors</td></tr>
+<tr><td>github.com/yuin/gopher-lua</td><td>v1.1.2</td><td>MIT</td><td>Copyright (c) 2015 Yusuke Inuzuka</td></tr>
+<tr><td>go4.org/netipx</td><td>v0.0.0…fdeea329fbba</td><td>BSD-3-Clause</td><td>Copyright (c) 2020 The Inet.af AUTHORS. All rights reserved.</td></tr>
+<tr><td>golang.org/x/crypto/x509roots/fallback</td><td>v0.0.0…9f2b28d4331a</td><td>BSD-3-Clause</td><td>Copyright 2009 The Go Authors.</td></tr>
+<tr><td>golang.org/x/crypto</td><td>v0.59.0</td><td>BSD-3-Clause</td><td>Copyright 2009 The Go Authors.</td></tr>
+<tr><td>golang.org/x/exp</td><td>v0.0.0…9bf2ced13842</td><td>BSD-3-Clause</td><td>Copyright (c) 2009 The Go Authors. All rights reserved.</td></tr>
+<tr><td>golang.org/x/net</td><td>v0.63.0</td><td>BSD-3-Clause</td><td>Copyright 2009 The Go Authors.</td></tr>
+<tr><td>golang.org/x/sync</td><td>v0.25.0</td><td>BSD-3-Clause</td><td>Copyright 2009 The Go Authors.</td></tr>
+<tr><td>golang.org/x/sys</td><td>v0.50.0</td><td>BSD-3-Clause</td><td>Copyright 2009 The Go Authors.</td></tr>
+<tr><td>golang.org/x/text</td><td>v0.44.0</td><td>BSD-3-Clause</td><td>Copyright 2009 The Go Authors.</td></tr>
+<tr><td>golang.zx2c4.com/wireguard</td><td>v0.0.0…f333402bd9cb</td><td>MIT</td><td>Copyright (C) 2017-2025 WireGuard LLC</td></tr>
+<tr><td>google.golang.org/genproto/googleapis/rpc</td><td>v0.0.0…ac3dfec99bb1</td><td>Apache-2.0</td><td>Copyright Google LLC</td></tr>
+<tr><td>google.golang.org/grpc</td><td>v1.85.0</td><td>Apache-2.0</td><td>Copyright the gRPC authors</td></tr>
+<tr><td>google.golang.org/protobuf</td><td>v1.36.12</td><td>BSD-3-Clause</td><td>Copyright (c) 2018 The Go Authors. All rights reserved.</td></tr>
+<tr><td>gopkg.in/yaml.v2</td><td>v2.4.0</td><td>Apache-2.0</td><td>Copyright (c) 2011-2019 Canonical Ltd; libyaml parts Copyright (c) 2006 Kirill Simonov (MIT)</td></tr>
+<tr><td>layeh.com/gopher-luar</td><td>v1.0.11</td><td>MPL-2.0</td><td>Copyright its authors</td></tr>
+<tr><td>lukechampine.com/blake3</td><td>v1.4.1</td><td>MIT</td><td>Copyright (c) 2020 Luke Champine</td></tr>
+<tr><td>golang.org/x/mobile (gomobile bind)</td><td>v0.0.0…47699113848a</td><td>BSD-3-Clause</td><td>Copyright The Go Authors</td></tr>
+<tr><td>Go standard library and runtime</td><td>go1.27.4</td><td>BSD-3-Clause</td><td>Copyright 2009 The Go Authors</td></tr>
+
+  </tbody>
+</table></div>
+
+<h2 id="mpl">2. Xray-core and other MPL-2.0 components — source code</h2>
+<p><strong>Xray-core</strong> (<a href="https://github.com/XTLS/Xray-core" rel="noopener">github.com/XTLS/Xray-core</a>), <strong>REALITY</strong> (<a href="https://github.com/XTLS/REALITY" rel="noopener">github.com/XTLS/REALITY</a>) and <strong>gopher-luar</strong> are distributed under the <a href="../../licenses/texts/MPL-2.0.txt">Mozilla Public License 2.0</a>. The apps use them as published by their authors, without modifications to MPL-licensed files:</p>
+<ul>
+  <li>Xray-core: commit <code>676eaf66f8f0</code> (Go version <code>v1.260327.1-0.20261109052709-676eaf66f8f0</code>), source code at <a href="https://github.com/XTLS/Xray-core/tree/676eaf66f8f0" rel="noopener">github.com/XTLS/Xray-core/tree/676eaf66f8f0</a>;</li>
+  <li>REALITY: commit <code>4bb46b2afd8b</code>, source code at <a href="https://github.com/XTLS/REALITY/tree/4bb46b2afd8b" rel="noopener">github.com/XTLS/REALITY</a>;</li>
+  <li>gopher-luar: version <code>v1.0.11</code>, source code at <a href="https://github.com/layeh/gopher-luar" rel="noopener">github.com/layeh/gopher-luar</a>.</li>
+</ul>
+<p>If a future version of the apps contains changes to MPL-licensed files, the modified source code will be published and linked here and in the release notes. You can also request the source code form of any MPL-licensed component in the apps at <a href="mailto:vojkovic@conciergegroup.pro">vojkovic@conciergegroup.pro</a>.</p>
+<p><strong>juju/ratelimit</strong> is licensed under the <a href="../../licenses/texts/LGPL-3.0-juju-ratelimit.txt">GNU LGPL 3.0 with a static-linking exception</a>, which permits distributing combined works without providing additional source code.</p>
+
+<h2 id="tunnel">3. Packet tunnel engine (all platforms)</h2>
+<p>Used by the device tunnel to pass device traffic to the core. Built from <a href="https://github.com/heiher/hev-socks5-tunnel" rel="noopener">github.com/heiher/hev-socks5-tunnel</a>, tag <code>2.20.0</code>, with its bundled libraries.</p>
+<div class="table-wrap"><table class="lic">
+  <thead><tr><th>Component</th><th>Version</th><th>Licence</th><th>Copyright</th></tr></thead>
+  <tbody>
+<tr><td>hev-socks5-tunnel</td><td>2.20.0</td><td>MIT</td><td>Copyright (c) 2022 hev</td></tr>
+<tr><td>hev-task-system (bundled with hev-socks5-tunnel)</td><td>2.20.0</td><td>MIT</td><td>Copyright (c) 2022 hev</td></tr>
+<tr><td>yaml (bundled with hev-socks5-tunnel)</td><td>2.20.0</td><td>MIT</td><td>Copyright (c) 2022 hev</td></tr>
+<tr><td>lwIP (bundled with hev-socks5-tunnel)</td><td>2.20.0</td><td>BSD-3-Clause</td><td>Copyright (c) 2001, 2002 Swedish Institute of Computer Science</td></tr>
+
+  </tbody>
+</table></div>
+
+<h2 id="apple">4. iPhone and Mac</h2>
+<div class="table-wrap"><table class="lic">
+  <thead><tr><th>Component</th><th>Version</th><th>Licence</th><th>Copyright</th></tr></thead>
+  <tbody>
+<tr><td>GRDB.swift</td><td>7.12.0</td><td>MIT</td><td>Copyright (C) 2015-2025 Gwendal Roué</td></tr>
+<tr><td>Yams (includes LibYAML)</td><td>6.2.2</td><td>MIT</td><td>Copyright (c) 2016 JP Simard; LibYAML Copyright (c) 2006-2016 Kirill Simonov, 2017-2020 Ingy döt Net</td></tr>
+
+  </tbody>
+</table></div>
+
+<h2 id="android">5. Android</h2>
+<div class="table-wrap"><table class="lic">
+  <thead><tr><th>Component</th><th>Version</th><th>Licence</th><th>Copyright</th></tr></thead>
+  <tbody>
+<tr><td>AndroidX Core KTX</td><td>1.17.0</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>AndroidX Activity Compose</td><td>1.13.0</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>Jetpack Compose (UI, Material 3) — BOM</td><td>2026.06.01</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>AndroidX Navigation Compose</td><td>2.9.5</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>AndroidX Lifecycle (ViewModel, Runtime Compose)</td><td>2.9.4</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>AndroidX Room</td><td>2.8.4</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>AndroidX DataStore Preferences</td><td>1.2.0</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>AndroidX CameraX (camera2, lifecycle, view)</td><td>1.6.2</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>AndroidX Glance AppWidget</td><td>1.1.1</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>AndroidX WebKit</td><td>1.14.0</td><td>Apache-2.0</td><td>Copyright The Android Open Source Project</td></tr>
+<tr><td>Kotlin standard library</td><td>2.2.21</td><td>Apache-2.0</td><td>Copyright JetBrains s.r.o. and Kotlin Programming Language contributors</td></tr>
+<tr><td>kotlinx.coroutines</td><td>1.10.2</td><td>Apache-2.0</td><td>Copyright JetBrains s.r.o. and contributors</td></tr>
+<tr><td>kotlinx.serialization (JSON)</td><td>1.9.0</td><td>Apache-2.0</td><td>Copyright JetBrains s.r.o. and contributors</td></tr>
+<tr><td>OkHttp</td><td>4.12.0</td><td>Apache-2.0</td><td>Copyright Square, Inc.</td></tr>
+<tr><td>Okio (OkHttp dependency)</td><td>3.6.0</td><td>Apache-2.0</td><td>Copyright Square, Inc.</td></tr>
+<tr><td>ZXing core</td><td>3.5.4</td><td>Apache-2.0</td><td>Copyright ZXing authors</td></tr>
+<tr><td>SnakeYAML Engine</td><td>2.10</td><td>Apache-2.0</td><td>Copyright (c) 2018, SnakeYAML</td></tr>
+
+  </tbody>
+</table></div>
+<p>The Android app does not include Google Play services, Firebase or ML Kit; QR codes are decoded with ZXing.</p>
+
+<h2 id="fonts">6. Fonts (apps and this website)</h2>
+<div class="table-wrap"><table class="lic">
+  <thead><tr><th>Font</th><th>Version</th><th>Licence</th><th>Copyright</th></tr></thead>
+  <tbody>
+<tr><td>Old Standard TT (400, 700, 400 italic)</td><td>google/fonts 06bfe0d</td><td>OFL-1.1</td><td>Copyright 2011 The Old Standard Project Authors</td></tr>
+<tr><td>Onest (400–700)</td><td>2.001</td><td>OFL-1.1</td><td>Copyright 2021 The Onest Project Authors</td></tr>
+<tr><td>JetBrains Mono (400, 500, 700)</td><td>1937130</td><td>OFL-1.1</td><td>Copyright 2020 The JetBrains Mono Project Authors</td></tr>
+
+  </tbody>
+</table></div>
+<p>Licensed under the SIL Open Font License 1.1: <a href="../../assets/fonts/OFL-OldStandardTT.txt">Old Standard TT</a>, <a href="../../assets/fonts/OFL-Onest.txt">Onest</a>, <a href="../../assets/fonts/OFL-JetBrainsMono.txt">JetBrains Mono</a>. This website serves the fonts from its own server, converted to WOFF2 without other changes.</p>
+
+<h2 id="texts">7. Licence texts</h2>
+<ul>
+  <li><a href="../../licenses/texts/MPL-2.0.txt">Mozilla Public License 2.0</a></li>
+  <li><a href="../../licenses/texts/Apache-2.0.txt">Apache License 2.0</a></li>
+  <li><a href="../../licenses/texts/MIT.txt">MIT License</a></li>
+  <li><a href="../../licenses/texts/BSD-3-Clause.txt">BSD 3-Clause License</a> · <a href="../../licenses/texts/BSD-2-Clause.txt">BSD 2-Clause License</a></li>
+  <li><a href="../../licenses/texts/LGPL-3.0-juju-ratelimit.txt">GNU LGPL 3.0 with static-linking exception (juju/ratelimit)</a></li>
+  <li>SIL Open Font License 1.1 — see section 6</li>
+</ul>
+<p>The copyright notice of each component is listed in the tables above and applies together with the licence text of that component.</p>
+
+<h2 id="trademarks">8. Trademarks</h2>
+<p>“WireGuard” is a registered trademark of Jason A. Donenfeld. Isoline is not affiliated with or endorsed by the WireGuard project; it supports configurations compatible with the WireGuard protocol. Other product names are trademarks of their respective owners.</p>
+
+    </article>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <section aria-labelledby="f-company">
+        <h2 id="f-company">Company</h2>
+        <address>CONCIERGE d. o. o.<br>Ravnica 8, Portole<br>52428 Oprtalj, Croatia<br>OIB 37728065457 · MBS 130052099<br>
+        E-mail: <a href="mailto:vojkovic@conciergegroup.pro">vojkovic@conciergegroup.pro</a><br>
+        Phone: <a href="tel:+48510346363">+48 510 346 363</a></address>
+        <p><a href="../../en/company/">Company information</a></p>
+      </section>
+      <section aria-labelledby="f-legal">
+        <h2 id="f-legal">Legal</h2>
+        <ul>
+          <li><a href="../../en/privacy/">Privacy</a></li>
+          <li><a href="../../en/privacy/#data-deletion">Data deletion</a></li>
+          <li><a href="../../en/terms/">Terms</a></li>
+          <li><a href="../../en/licenses/">Licenses</a></li>
+          <li><a href="../../en/company/">Company information</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="f-product">
+        <h2 id="f-product">Isoline</h2>
+        <p>A Geo-QA tool: one page, seen through your own points of presence in other regions.</p>
+        <ul>
+          <li><a href="../../en/support/">Support</a></li>
+          <li><a href="../../en/support/#providers">For VPN providers</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CONCIERGE d. o. o. All rights reserved.</span>
+      <span>This site uses no cookies, no analytics and no external resources.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
